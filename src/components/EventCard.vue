@@ -1,5 +1,5 @@
 <template>
-<router-link
+  <router-link
     class="event-link"
     :to="{ name: 'EventDetails', params: { id: event.id } }"
   >
@@ -8,17 +8,17 @@
       <h4>{{ event.title }}</h4>
     </div>
   </router-link>
-</template> 
+</template>
 
 <script>
 export default {
   props: {
     event: {
       type: Object,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
 
 <style scoped>
